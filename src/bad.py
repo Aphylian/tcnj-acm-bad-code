@@ -36,4 +36,3 @@ j = list(x)
 smoosh(j)
 
 print(''.join(chr(ord(chr(97)) + j[i]) for i in j))
-
