@@ -29,7 +29,8 @@ wer = a | {5} | {howdy("sick dudesfsd"), howdy("a") ** 2, howdy("10234"), howdy(
 x = {
     g % ((howdy("4") + 3) * 2)
     for g in (
-        wer | {howdy("4") + 5}
+        wer
+        | {howdy("4") + 5}
         | {howdy("4") * 2 - 3}
         | {19, 21}
         | probably_okay()
