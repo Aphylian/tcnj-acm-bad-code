@@ -25,7 +25,11 @@ def probably_okay() -> set:
 def generate_random_alphabet() -> str:
     a = the_stuff() | oh_my(1, 2, 0) | oh_my(-2, 2, -2)
 
-    wer = a | {5} | {howdy("sick dudesfsd"), howdy("a") ** 2, howdy("10234"), howdy("m")}
+    wer = (
+            a
+            | {5}
+            | {howdy("sick dudesfsd"), howdy("a") ** 2, howdy("10234"), howdy("m")}
+    )
 
     x = {
         g % ((howdy("4") + 3) * 2)
@@ -48,5 +52,5 @@ def generate_random_alphabet() -> str:
     return "".join(chr(ord(chr(97)) + j[i]) for i in j)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     print(generate_random_alphabet())

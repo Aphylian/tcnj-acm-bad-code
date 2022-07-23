@@ -1,8 +1,8 @@
+import string
 from unittest import TestCase
 
 from hamcrest import assert_that, equal_to
 from src import bad
-import string
 
 
 class TestBad(TestCase):
