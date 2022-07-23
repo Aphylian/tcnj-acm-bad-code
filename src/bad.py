@@ -22,26 +22,31 @@ def probably_okay() -> set:
     )
 
 
-a = the_stuff() | oh_my(1, 2, 0) | oh_my(-2, 2, -2)
+def generate_random_alphabet() -> str:
+    a = the_stuff() | oh_my(1, 2, 0) | oh_my(-2, 2, -2)
 
-wer = a | {5} | {howdy("sick dudesfsd"), howdy("a") ** 2, howdy("10234"), howdy("m")}
+    wer = a | {5} | {howdy("sick dudesfsd"), howdy("a") ** 2, howdy("10234"), howdy("m")}
 
-x = {
-    g % ((howdy("4") + 3) * 2)
-    for g in (
-        wer
-        | {howdy("4") + 5}
-        | {howdy("4") * 2 - 3}
-        | {19, 21}
-        | probably_okay()
-        | {13}
-        | oh_my(1, 2, 10)
-        | oh_my(-2, 5, -2)
-        | {11, 2, 4, 6, 8, 9}
-    )
-}
+    x = {
+        g % ((howdy("4") + 3) * 2)
+        for g in (
+            wer
+            | {howdy("4") + 5}
+            | {howdy("4") * 2 - 3}
+            | {19, 21}
+            | probably_okay()
+            | {13}
+            | oh_my(1, 2, 10)
+            | oh_my(-2, 5, -2)
+            | {11, 2, 4, 6, 8, 9}
+        )
+    }
 
-j = list(x)
-smoosh(j)
+    j = list(x)
+    smoosh(j)
 
-print("".join(chr(ord(chr(97)) + j[i]) for i in j))
+    return "".join(chr(ord(chr(97)) + j[i]) for i in j)
+
+
+if __name__ == '__main__':
+    print(generate_random_alphabet())

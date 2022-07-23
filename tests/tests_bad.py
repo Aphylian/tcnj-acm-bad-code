@@ -2,6 +2,7 @@ from unittest import TestCase
 
 from hamcrest import assert_that, equal_to
 from src import bad
+import string
 
 
 class TestBad(TestCase):
@@ -49,3 +50,17 @@ class TestBad(TestCase):
         result = bad.oh_my(-2, 5, -2)
         expected_result = {0, 12, 5}
         assert_that(result, equal_to(expected_result))
+
+    def test_generateRandomAlphabet_returnsString_ofLength26(self):
+        result = bad.generate_random_alphabet()
+        assert_that(len(result), equal_to(26))
+
+    def test_generateRandomAlphabet_returnsString_of26UniqueCharacters(self):
+        alphabet = set(string.ascii_lowercase)
+        result = bad.generate_random_alphabet()
+        unique_characters = set(result) == alphabet
+        assert_that(unique_characters, equal_to(True))
+
+    def test_generateRandomAlphabet_isLowerCase(self):
+        result = bad.generate_random_alphabet()
+        assert_that(result, equal_to(result.lower()))
