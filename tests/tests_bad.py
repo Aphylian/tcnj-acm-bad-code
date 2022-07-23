@@ -10,19 +10,19 @@ class TestBad(TestCase):
         assert_that(result, equal_to(expected_result))
 
     def test_howdy_returns1_whenmIsPassedIn(self):
-        result = bad.howdy('m')
+        result = bad.howdy("m")
         assert_that(result, equal_to(1))
 
     def test_howdy_returns1_whenaIsPassedIn(self):
-        result = bad.howdy('a')
+        result = bad.howdy("a")
         assert_that(result, equal_to(19))
 
     def test_howdy_returns1_when10234IsPassedIn(self):
-        result = bad.howdy('10234')
+        result = bad.howdy("10234")
         assert_that(result, equal_to(10))
 
     def test_howdy_returns1_whensickdudesfdIsPassedIn(self):
-        result = bad.howdy('sick dudesfd')
+        result = bad.howdy("sick dudesfd")
         assert_that(result, equal_to(18))
 
     def test_probablyOkay_returnsList_of0and1(self):
