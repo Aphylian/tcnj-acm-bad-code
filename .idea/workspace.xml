@@ -53,7 +53,7 @@
       <recent name="C:\Users\dlong\OneDrive - Apollo Fire Detectors Ltd\Documents\GitHub\tcnj-acm-bad-code\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests_improved.TestImproved">
+  <component name="RunManager" selected="Python tests.pytest for tests_bad.TestBad">
     <configuration name="pytest for tests_bad.TestBad" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="tcnj-acm-bad-code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +102,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests_bad.TestBad.test_theStuff_returnsList_ofFiveElements" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests_bad.TestImproved" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="tcnj-acm-bad-code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -114,7 +114,7 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests_bad.TestBad.test_theStuff_returnsList_ofFiveElements&quot;" />
+      <option name="_new_target" value="&quot;tests_bad.TestImproved&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for tests_improved.TestImproved" />
         <item itemvalue="Python tests.pytest for tests_bad.TestBad" />
+        <item itemvalue="Python tests.pytest for tests_bad.TestImproved" />
+        <item itemvalue="Python tests.pytest for tests_improved.TestImproved" />
         <item itemvalue="Python tests.pytest for tests_bad.TestBad.test_theStuff_returnsFirstElement_ofEightElements" />
         <item itemvalue="Python tests.pytest for tests_bad.TestBad.test_theStuff_returnsList_ofEightElements" />
-        <item itemvalue="Python tests.pytest for tests_bad.TestBad.test_theStuff_returnsList_ofFiveElements" />
       </list>
     </recent_temporary>
   </component>
