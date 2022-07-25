@@ -7,8 +7,8 @@ def the_stuff() -> set:
 
 
 def oh_my(b: int, a: int, c: int) -> set:
-    input_dict = {b + a + c * 2, b + a // 3 + c * 2, 10 // b + a // 3 + c * 2}
-    return {((values**2) // 5) for values in input_dict}
+    input_set = {b + a + c * 2, b + a // 3 + c * 2, 10 // b + a // 3 + c * 2}
+    return {((values**2) // 5) for values in input_set}
 
 
 def howdy(str_input: str) -> int:
