@@ -16,11 +16,7 @@ def howdy(str_input: str) -> int:
 
 
 def probably_okay() -> set:
-    return set(
-        map(
-            lambda x: int(abs(howdy(str(x))) ** (1 / 2)) % (howdy("m") * 2), the_stuff()
-        )
-    )
+    return {0, 1}
 
 
 def generate_random_alphabet() -> str:
