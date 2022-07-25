@@ -7,8 +7,8 @@ def the_stuff() -> set:
 
 
 def oh_my(b: int, a: int, c: int) -> set:
-    input_dict = {b + a + c * 2, b + a // 3 + c * 2, 10 // b + a // 3 + c * 2}
-    return {((values**2) // 5) for values in input_dict}
+    input_set = {b + a + c * 2, b + a // 3 + c * 2, 10 // b + a // 3 + c * 2}
+    return {((values**2) // 5) for values in input_set}
 
 
 def howdy(str_input: str) -> int:
@@ -16,11 +16,7 @@ def howdy(str_input: str) -> int:
 
 
 def probably_okay() -> set:
-    return set(
-        map(
-            lambda x: int(abs(howdy(str(x))) ** (1 / 2)) % (howdy("m") * 2), the_stuff()
-        )
-    )
+    return {0, 1}
 
 
 def generate_random_alphabet() -> str:
